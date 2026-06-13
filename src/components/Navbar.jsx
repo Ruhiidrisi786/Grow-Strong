@@ -1,37 +1,39 @@
-import { FaDumbbell } from "react-icons/fa";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <nav className="navbar-section">
-      <div className="container-custom">
-        <div className="logo">
-          <FaDumbbell className="logo-icon" />
+    <nav className="navbar">
+      <div className="logo">GROW STRONG</div>
 
-          <span className="logo-black">GROW</span>
-
-          <span className="logo-green">STRONG</span>
-        </div>
-
-        <ul className="nav-links">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-
-          <li>
-            <a href="#info">Info</a>
-          </li>
-
-          <li>
-            <a href="#client">Our Client</a>
-          </li>
-
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <button className="join-btn">Join Now</button>
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
       </div>
+
+      <ul className={menuOpen ? "nav-links active" : "nav-links"}>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+
+        <li>
+          <Link to="/classes">Classes</Link>
+        </li>
+
+        <li>
+          <Link to="/trainers">Trainers</Link>
+        </li>
+
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
     </nav>
   );
 }

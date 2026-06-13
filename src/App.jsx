@@ -1,25 +1,31 @@
+import { Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Classes from "./components/Classes";
-import "./App.css";
-import HIIT from "./components/HIIT";
-import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
-import Trainers from "./components/Trainers";
-import Pricing from "./components/Pricing";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Classes from "./pages/Classes";
+import Trainers from "./pages/Trainers";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Classes />
-      <HIIT />
-      <Trainers />
-      <Pricing />
-      <Testimonials />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/about" element={<About />} />
+
+        <Route path="/classes" element={<Classes />} />
+
+        <Route path="/trainers" element={<Trainers />} />
+
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
       <Footer />
     </>
   );
