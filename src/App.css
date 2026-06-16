@@ -6,6 +6,7 @@
   box-sizing:border-box;
 }
 
+
 body{
   font-family:'Inter',sans-serif;
   overflow-x:hidden;
@@ -1018,6 +1019,17 @@ body{
 
   box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1000;
+  background: #fff;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
 
 .logo a{
   text-decoration:none;
@@ -1077,4 +1089,15 @@ body{
   .nav-links.active{
     left:0;
   }
+}
+
+
+html,
+body{
+  overflow-x:hidden;
+  width:100%;
+}
+
+#root{
+  overflow-x:hidden;
 }
