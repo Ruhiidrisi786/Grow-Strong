@@ -77,7 +77,7 @@ function Pricing() {
                 ))}
               </ul>
 
-              <button>Join Now</button>
+              {/* <button>Join Now</button> */}
             </div>
           ))}
         </div>

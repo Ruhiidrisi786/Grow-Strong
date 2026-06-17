@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Classes from "./pages/Classes";
 import Trainers from "./pages/Trainers";
+import WhatsappButton from "./components/WhatsappButton";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       </Routes>
 
       <Footer />
+      <WhatsappButton />
     </>
   );
 }
