@@ -1,4 +1,5 @@
 import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import WhatsappButton from "./WhatsappButton";
 
 function Footer() {
   return (
@@ -17,15 +18,27 @@ function Footer() {
           <div>
             <h4 className="footer-title">CONTACT</h4>
 
-            <p className="footer-text">+91 9876543210</p>
+            <p className="footer-text">
+              <a href="tel:+919876543210">+91 7715823336</a>
+            </p>
 
-            <p className="footer-text">info@growstrong.com</p>
+            <p className="footer-text">
+              <a href="mailto:info@growstrong.com">info@growstrong.com</a>
+            </p>
           </div>
 
           <div>
             <h4 className="footer-title">ADDRESS</h4>
 
-            <p className="footer-text">Andheri West, Mumbai, Maharashtra</p>
+            <p className="footer-text">
+              <a
+                href="https://maps.google.com/?q=Andheri+East+Mumbai+Maharashtra"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Andheri East, Mumbai, Maharashtra
+              </a>
+            </p>
           </div>
 
           <div>
@@ -33,15 +46,33 @@ function Footer() {
 
             <div className="social-icons">
               <i>
-                <FaInstagram />
+                <a
+                  href="https://instagram.com/YOUR_USERNAME"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram />
+                </a>
               </i>
 
               <i>
-                <FaFacebookF />
+                <a
+                  href="https://facebook.com/YOUR_PAGE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebookF />
+                </a>
               </i>
 
               <i>
-                <FaWhatsapp />
+                <a
+                  href="https://wa.me/917715823336"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsapp />
+                </a>
               </i>
             </div>
           </div>

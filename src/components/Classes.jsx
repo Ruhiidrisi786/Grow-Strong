@@ -27,8 +27,7 @@ function Classes() {
         <div className="classes-header">
           <h2>
             JOIN OUR
-            <br />
-            GROUP CLASSES
+            <span>GROUP CLASSES</span>
           </h2>
         </div>
 
