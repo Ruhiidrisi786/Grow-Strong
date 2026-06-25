@@ -1,30 +1,39 @@
+import "../styles/Hero.css";
+import { Link } from "react-router-dom";
+import gymVideo from "../assets/gym-video.mp4";
+
 function Hero() {
   return (
-    <section id="home" className="hero-section">
-      <div className="container-custom hero-grid">
-        <div className="hero-left">
-          <div className="image-card" data-aos="fade-left">
-            <img
-              src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="fitness"
-            />
-          </div>
+    <section className="hero">
+      {/* Background Video */}
+      <video autoPlay loop muted playsInline className="hero-video">
+        <source src={gymVideo} type="video/mp4" />
+      </video>
 
-          <div className="dots"></div>
-        </div>
+      {/* Dark Overlay */}
+      <div className="hero-overlay"></div>
 
-        <div className="hero-right" data-aos="fade-right">
-          <span className="hero-subtitle">GROW STRONG</span>
+      {/* Content */}
+      <div className="hero-content">
+        <h1>
+          TRANSFORM YOUR <span>BODY</span>
+        </h1>
 
-          <h1>
-            GET READY
-            <br />
-            FOR CHANGE
-            <br />
-            TO HAPPEN.
-          </h1>
+        <h2>BUILD STRENGTH. BUILD CONFIDENCE.</h2>
 
-          <button className="learn-btn">Learn More</button>
+        <p>
+          Join Grow Strong and start your fitness journey with expert trainers
+          and personalized workouts.
+        </p>
+
+        <div className="hero-buttons">
+          <Link to="/classes" className="primary-btn">
+            Explore Classes
+          </Link>
+
+          <Link to="/contact" className="secondary-btn">
+            Join Now
+          </Link>
         </div>
       </div>
     </section>
