@@ -9,10 +9,13 @@ import Classes from "./pages/Classes";
 import Trainers from "./pages/Trainers";
 import WhatsappButton from "./components/WhatsappButton";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
+import "./styles/Global.css";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
 
       <Routes>

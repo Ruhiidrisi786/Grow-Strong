@@ -10,7 +10,7 @@ function Testimonials() {
         </div>
 
         <div className="testimonial-grid">
-          <div className="testimonial-card">
+          <div className="testimonial-card" data-aos="fade-up">
             <img src="https://randomuser.me/api/portraits/women/44.jpg" />
             <h3>Sarah Khan</h3>
 

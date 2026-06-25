@@ -377,6 +377,39 @@ body{
 }
 
 }
+/* ======================
+   STATS SECTION
+====================== */
+
+.stats-section{
+  padding: 80px 0;
+  background: #111;
+}
+
+.stats-card{
+  background: #1b1b1b;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.stats-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(196,229,56,.3);
+}
+
+.stats-card h2{
+  color: #c4e538;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.stats-card p{
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
 
 /* ==========================
    HIIT SECTION

@@ -58,6 +58,7 @@ function Pricing() {
             <div
               key={plan.id}
               className={`pricing-card ${plan.popular ? "popular" : ""}`}
+              data-aos="zoom-in"
             >
               {plan.popular && (
                 <div className="popular-badge">MOST POPULAR</div>
