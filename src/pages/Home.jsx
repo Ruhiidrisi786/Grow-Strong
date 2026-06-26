@@ -1,17 +1,13 @@
 import Hero from "../components/Hero";
-import HIIT from "../components/HIIT";
-import Pricing from "../components/Pricing";
-import Testimonials from "../components/Testimonials";
 import Stats from "../components/Stats";
+import FeaturedClasses from "../components/FeaturedClasses";
 
 function Home() {
   return (
     <>
       <Hero />
       <Stats />
-      <HIIT />
-      <Pricing />
-      <Testimonials />
+      <FeaturedClasses />
     </>
   );
 }
